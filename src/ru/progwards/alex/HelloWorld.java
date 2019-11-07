@@ -9,11 +9,7 @@ public class HelloWorld {
         //int z = x+y;
         return x+y;
     }
-    static int addition1(int x, int y) {
-        //int z = x+y;
-        return x+y;
-    }
-        public static void main(String[] args) {
+    public static void main(String[] args) {
         println("Привет, мир!");
         println("Мир, ты слышишь меня?!");
         System.out.print("Я знаю что 5+7 =");
