@@ -16,12 +16,6 @@ public class Task3 {
     }
 
     public static void main (String[]args){
-        int a,b;
-        a=34;
-        b=55;
-
-        int c=a+b;
-
 
         System.out.println(addition(89, 55));//3.1
         System.out.println(subtraction(89, 55));//3.2
