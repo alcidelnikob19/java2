@@ -40,5 +40,5 @@ public class Task3 {
         c= multiplication(a, b);
         System.out.println("a * b = "+c);//3.4
 
-         }
+    }
 }
