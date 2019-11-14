@@ -8,7 +8,7 @@ public class ReverseDigits {
             if (number > 9) {
                 leftover = number % 10;
                 number = number / 10;
-                System.out.print(leftover);
+              System.out.print(leftover);
             } else {
                 leftover = number % 10;
                 number = number / 10;
@@ -19,7 +19,7 @@ public class ReverseDigits {
         return leftover;
     }
         public static void main (String[]args){
-            reverseDigits(321);
+            reverseDigits(123);
 
         }
     }
