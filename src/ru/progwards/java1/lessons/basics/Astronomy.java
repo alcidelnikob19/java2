@@ -26,7 +26,7 @@ public class Astronomy<sphereSquare> {
         return raz;
     }
     public static Double earthVsJupiter(){
-        Double raz1 =sphereSquare(71492.0)/sphereSquare(6371.2);
+        Double raz1 =sphereSquare(6371.2)/sphereSquare(71492.0);
         return raz1;
     }
     public static void main (String[]args){
