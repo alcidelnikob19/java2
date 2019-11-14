@@ -22,11 +22,11 @@ public class Astronomy<sphereSquare> {
     }
 
     public static Double earthVsMercury(){
-        Double raz =sphereSquare(6371.2)-sphereSquare(2439.7);
+        Double raz =sphereSquare(6371.2)/sphereSquare(2439.7);
         return raz;
     }
     public static Double earthVsJupiter(){
-        Double raz1 =sphereSquare(71492.0)-sphereSquare(6371.2);
+        Double raz1 =sphereSquare(71492.0)/sphereSquare(6371.2);
         return raz1;
     }
     public static void main (String[]args){
