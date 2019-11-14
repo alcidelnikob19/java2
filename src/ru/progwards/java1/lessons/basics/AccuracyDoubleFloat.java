@@ -4,7 +4,7 @@ public class AccuracyDoubleFloat {
 
     public static double volumeBallDouble(double radius){
         Double pi=3.14;
-        Double V = 4/3*pi*(radius*radius*radius);
+        Double V = 4.0/3.0*pi*(radius*radius*radius);
         return V;
     }
 
@@ -12,7 +12,7 @@ public class AccuracyDoubleFloat {
     public static float volumeBallFloat(float radius){
         float pi= (float) 3.14;
 //        return (float) volumeBallDouble(6371.2);
-        float V = 4/3*pi*(radius*radius*radius);
+        float V = (float) (4.0/3.0*pi*(radius*radius*radius));
         return V;
 }
 
