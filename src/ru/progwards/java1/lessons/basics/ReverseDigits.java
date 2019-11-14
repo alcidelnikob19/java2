@@ -2,7 +2,7 @@ package ru.progwards.java1.lessons.basics;
 
 public class ReverseDigits {
 
-    public static void reverseDigits(int number){
+    public static int reverseDigits(int number){
         int z= number % 10;
         int z1= (number-z) / 10;
         int z4= z1% 10;
@@ -14,6 +14,7 @@ public class ReverseDigits {
         System.out.print(z);
         System.out.print(z4);
         System.out.print(z2);
+        return z;
     }
     public static void main (String[]args){
         reverseDigits(321);
