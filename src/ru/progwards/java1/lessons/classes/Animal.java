@@ -69,8 +69,7 @@ public class Animal {
         return foodKind;
     }
 
-    @Override
-    public String toString() {
+    public String toStringFull() {
         return "I am " + getKind() + ", eat " + getFoodKind() + " " + calculateFoodWeight();
     }
 
