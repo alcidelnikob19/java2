@@ -41,7 +41,7 @@ public class Animal {
     static enum AnimalKind {ANIMAL, COW, HAMSTER, DUCK}
     static enum FoodKind {UNKNOWN, HAY, CORN}
 
-    private AnimalKind animalKind = AnimalKind.ANIMAL;
+    private AnimalKind animalKind = AnimalKind.ANIMAL;// sdfsf
     private FoodKind foodKind = FoodKind.UNKNOWN;
 
     private double weight = 1d; // вес животного
