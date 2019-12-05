@@ -20,7 +20,7 @@ public class SumBits {
     }
 
         public static void main (String[]args){
-            System.out.println(sumBits((byte) 0b01111));
+            System.out.println(sumBits((byte) 0b0100101));
         }
     }
 // 1%2=1
