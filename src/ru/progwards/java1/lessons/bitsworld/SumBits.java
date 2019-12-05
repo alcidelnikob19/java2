@@ -13,7 +13,7 @@ public class SumBits {
 
             sum = b0 + sum;
 
-            i = i + 1;
+            i++;
         }
 
         return sum;
