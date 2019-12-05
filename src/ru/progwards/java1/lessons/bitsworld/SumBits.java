@@ -5,17 +5,20 @@ public class SumBits {
     public static int sumBits(byte value) {
         int i = 0;
         int sum = 0;
-        while (i < 9) {
+        if (value > 0) {
+            while (i < 9) {
 
 
-            int b0 = value >> i&1;
+                int b0 = value >> i & 1;
 
 
-            sum = b0 + sum;
+                sum = b0 + sum;
 
-            i++;
+                i++;
+            }
+
+            return sum;
         }
-
         return sum;
     }
 
