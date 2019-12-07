@@ -8,17 +8,22 @@ public class Binary {
         this.num = num;
     }
 
-    // возвращает двоичное представление целого числа используя только битовые операции
-    public String toString() {
-        int n = num & 0x7F_FF_FF_FF;
-        String r = num < 0 ? "1" : "0";
-        for(int i = 1; i < 8; i++) {
-            r += (n & 0x40_00_00_00) == 0x40_00_00_00 ? "1" : "0";
-            //if(i % 4 == 3) r += " ";
-            n <<= 1;
+//     возвращает двоичное представление целого числа используя только битовые операции
+     public String toString() {
+         int i = 0;
+         String res = "";
+        while (i < 8) {
+
+            int bit = CheckBit.checkBit((byte) num, i);
+            if (bit == 1)
+                res ="1"+res;//res=res+"1";
+            else
+                res ="0"+res;
+            i++;
         }
-        return r;
-    }
+            return res;
+     }
+
 
     public static void main(String[] args) {
         int t = 0;
