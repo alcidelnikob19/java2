@@ -17,12 +17,13 @@ public class Eratosthenes {
     }
 
     public boolean isSimple(int n){
+
         return sieve[n];
     }
 
     public static void main(String[] args) {
         Eratosthenes er = new Eratosthenes(100);
-        for (int i = 0; i < 100; i++) {
+        for (int i = 2; i < 100; i++) {
             System.out.println(i + " " + er.isSimple(i));
         }
     }
