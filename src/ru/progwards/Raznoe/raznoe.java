@@ -1,42 +1,39 @@
 package ru.progwards.Raznoe;
 
+import java.util.Arrays;
+
 public class raznoe {
-}
-//package ru.progwards.java1.lessons.bitsworld;
-//
-//public class Binary {
-//
-//    int num;
-//
-//    Binary(int num){
-//        this.num = num;
-//    }
-//
-//    // возвращает двоичное представление целого числа используя только битовые операции
-//    public String toString() {
-////        int n = num & 0x7F_FF_FF_FF;
-//        int n = num & 0x7F_FF_FF_FF;
-//        String r = num < 0 ? "1" : "0";
-//        for(int i = 1; i < 8; i++) {
-//            r += (n & 0x40_00_00_00) == 0x40_00_00_00 ? "1" : "0";
-//            //if(i % 4 == 3) r += " ";
-//            n <<= 1;
-//        }
-//        return r;
-//    }
-//
-//    public static void main(String[] args) {
-//        int t = 0;
-//        System.out.println(Integer.toBinaryString(t) + "=" + new ru.progwards.java1.lessons.bitsworld.Binary(t));
-//        t = 1;
-//        System.out.println(Integer.toBinaryString(t) + "=" + new ru.progwards.java1.lessons.bitsworld.Binary(t));
-//        t = 127;
-//        System.out.println(Integer.toBinaryString(t) + "=" + new ru.progwards.java1.lessons.bitsworld.Binary(t));
-//        t = 128;
-//        System.out.println(Integer.toBinaryString(t) + "=" + new ru.progwards.java1.lessons.bitsworld.Binary(t));
-//        t = -1;
-//        System.out.println(Integer.toBinaryString(t) + "=" + new ru.progwards.java1.lessons.bitsworld.Binary(t));
-//    }
-//
-//}
+    public static void main(String[] args) {
+        int[] unsortedArray = {2,1,45,7};
+
+        System.out.println(Arrays.toString(unsortedArray));
+
+        choiceSort(unsortedArray);
+    }
+
+    public static void choiceSort(int[] arrayToSort){
+
+
+        //проходим по массиву
+        //Найти минимальный элемент
+        //меняем местами 1 и минимальный элемент
+
+        //повторяем пока не пройхоме по всему массиву
+        int indexMin;
+        for (int index = 0; index < arrayToSort.length ; index++){
+            indexMin = index;
+            for (int indexToScan = index; indexToScan < arrayToSort.length; indexToScan++) {
+                if (arrayToSort[indexMin] > arrayToSort[indexToScan]) {
+                    indexMin = indexToScan;
+                }
+            }
+            int temp = arrayToSort[index];
+            arrayToSort[index] = arrayToSort[indexMin];
+            arrayToSort[indexMin]=temp;
+
+            }
+        System.out.println(Arrays.toString(arrayToSort));
+        }
+
+    }
 
