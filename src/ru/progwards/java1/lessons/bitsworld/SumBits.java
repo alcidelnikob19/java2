@@ -5,8 +5,7 @@ public class SumBits {
     public static int sumBits(byte value) {
         int i = 0;
         int sum = 0;
-        if (value > 0) {
-            while (i < 9) {
+           while (i < 8) {
 
 
                 int b0 = value >> i & 1;
@@ -18,12 +17,11 @@ public class SumBits {
             }
 
             return sum;
-        }
-        return sum;
+
     }
 
         public static void main (String[]args){
-            System.out.println(sumBits((byte) 0b0100101));
+            System.out.println(sumBits((byte) 0b10000000));
         }
     }
 // 1%2=1
